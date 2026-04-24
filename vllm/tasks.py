@@ -6,7 +6,8 @@ GenerationTask = Literal["generate", "transcription", "realtime"]
 GENERATION_TASKS: tuple[GenerationTask, ...] = get_args(GenerationTask)
 
 PoolingTask = Literal[
-    "embed", "classify", "score", "token_embed", "token_classify", "plugin"
+    "embed", "classify", "score", "token_embed", "token_classify", "plugin",
+    "embed_with_sparse"
 ]
 POOLING_TASKS: tuple[PoolingTask, ...] = get_args(PoolingTask)
 
